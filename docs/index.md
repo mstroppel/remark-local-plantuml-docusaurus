@@ -7,4 +7,4 @@ title: Start
 
 The following tests were added:
 
-- none
+- [Simple PlantUML Diagram](./simple.md)

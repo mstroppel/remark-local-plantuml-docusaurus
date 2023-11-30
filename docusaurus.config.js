@@ -1,6 +1,6 @@
 
 import {themes as prismThemes} from 'prism-react-renderer';
-//const simplePlantUML = require("@mstroppel/remark-local-plantuml");
+const simplePlantUML = require("@mstroppel/remark-local-plantuml");
 
 const config = {
   title: 'remark-local-plantuml-docusaurus',
@@ -27,7 +27,9 @@ const config = {
         docs: {
           showLastUpdateTime: true,
           routeBasePath: "/",
-          //remarkPlugins: [simplePlantUML],
+          remarkPlugins: [
+            simplePlantUML,
+          ],
         },
         blog: false,
         theme: {

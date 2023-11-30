@@ -1,0 +1,12 @@
+{
+  "editor.formatOnSave": true,
+  "editor.insertSpaces": true,
+  "editor.detectIndentation": true,
+  "editor.tabSize": 4,
+  "[markdown]": {
+    "editor.detectIndentation": false
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll.markdownlint": true
+  }
+}
