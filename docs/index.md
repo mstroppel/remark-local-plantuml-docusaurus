@@ -1,4 +1,5 @@
 ---
+sidebar_position: 1
 title: Start
 ---
 
@@ -8,4 +9,4 @@ title: Start
 The following tests were added:
 
 - [Simple PlantUML Diagram](./simple.md)
-- [using Azure Diagrams](./azure.md)
+- [Azure Diagrams](./azure.md)
