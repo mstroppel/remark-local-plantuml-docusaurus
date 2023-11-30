@@ -1,6 +1,6 @@
 
 import {themes as prismThemes} from 'prism-react-renderer';
-const localPlantUML = require("../remark-local-plantuml");
+const localPlantUML = require("@mstroppel/remark-local-plantuml");
 import rehypeRaw from 'rehype-raw';
 const rehypeRawOptions = {
   passThrough: ['mdxjsEsm']
