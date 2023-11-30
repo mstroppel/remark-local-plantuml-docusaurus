@@ -31,8 +31,10 @@ const config = {
         docs: {
           showLastUpdateTime: true,
           routeBasePath: "/",
-          rehypePlugins: [[rehypeRaw, rehypeRawOptions]],
-          remarkPlugins: [localPlantUML],
+          remarkPlugins: [
+            simplePlantUML,
+            require("./packages/remark-html-to-jsx"),
+          ],
         },
         blog: false,
         theme: {
