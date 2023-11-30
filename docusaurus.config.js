@@ -1,6 +1,10 @@
 
 import {themes as prismThemes} from 'prism-react-renderer';
-const simplePlantUML = require("@mstroppel/remark-local-plantuml");
+const localPlantUML = require("../remark-local-plantuml");
+import rehypeRaw from 'rehype-raw';
+const rehypeRawOptions = {
+  passThrough: ['mdxjsEsm']
+};
 
 const config = {
   title: 'remark-local-plantuml-docusaurus',
@@ -27,9 +31,8 @@ const config = {
         docs: {
           showLastUpdateTime: true,
           routeBasePath: "/",
-          remarkPlugins: [
-            simplePlantUML,
-          ],
+          rehypePlugins: [[rehypeRaw, rehypeRawOptions]],
+          remarkPlugins: [localPlantUML],
         },
         blog: false,
         theme: {

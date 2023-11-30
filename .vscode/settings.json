@@ -8,5 +8,10 @@
   },
   "editor.codeActionsOnSave": {
     "source.fixAll.markdownlint": true
-  }
+  },
+  "cSpell.words": [
+    "mdxjs",
+    "mstroppel",
+    "rehype"
+  ]
 }
