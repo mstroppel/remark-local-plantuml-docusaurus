@@ -3,7 +3,12 @@ import {themes as prismThemes} from 'prism-react-renderer';
 const localPlantUML = require("@mstroppel/remark-local-plantuml");
 import rehypeRaw from 'rehype-raw';
 const rehypeRawOptions = {
-  passThrough: ['mdxjsEsm']
+  passThrough: [
+    "mdxjsEsm",
+    "mdxJsxTextElement",
+    "mdxTextExpression",
+    "mdxJsxFlowElement",
+  ],
 };
 
 const config = {
