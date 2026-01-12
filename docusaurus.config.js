@@ -22,7 +22,12 @@ const config = {
   projectName: 'remark-local-plantuml-docusaurus', // Usually your repo name.
 
   onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
+
+  markdown: {
+    hooks: {
+      onBrokenMarkdownLinks: 'warn',
+    },
+  },
 
   i18n: {
     defaultLocale: 'en',
